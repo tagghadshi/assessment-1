@@ -2,7 +2,7 @@ package com.tcs.bank;
 
 import java.util.Date;
 
-public class CurrentAccount {
+public class CurrentAccount extends Account {
 	private double balance;
 	private final String type = "current";
 	private Date createDate;
@@ -43,6 +43,14 @@ public class CurrentAccount {
 
 	public String getType() {
 		return type;
+	}
+
+	public double getOverDraftBalance() {
+		return overDraftBalance;
+	}
+
+	public void setOverDraftBalance(double overDraftBalance) {
+		this.overDraftBalance = overDraftBalance;
 	}
 
 }
