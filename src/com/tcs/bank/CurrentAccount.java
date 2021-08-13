@@ -9,12 +9,12 @@ public class CurrentAccount extends Account {
 	private String status;
 	private double overDraftBalance;
 
-	public CurrentAccount(double balance, Date createDate, String status, double overDraftBalance) {
-		super();
+	public CurrentAccount(String accountNo, String accountType,double balance, Date createDate, String status) {
+		super(accountNo,accountType);
 		this.balance = balance;
 		this.createDate = createDate;
 		this.status = status;
-		this.overDraftBalance = overDraftBalance;
+		this.overDraftBalance = 85000;
 	}
 
 	public double getBalance() {

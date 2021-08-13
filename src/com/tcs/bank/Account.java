@@ -9,11 +9,9 @@ public class Account {
 
 	}
 
-	public Account(String accountNo, String accountType, String owner) {
-		super();
+	public Account(String accountNo, String accountType) {
 		this.accountNo = accountNo;
 		this.accountType = accountType;
-		this.owner = owner;
 	}
 
 	public String getAccountNo() {
@@ -35,5 +33,5 @@ public class Account {
 	public void setOwner(String owner) {
 		this.owner = owner;
 	}
-
+	
 }

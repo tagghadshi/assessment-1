@@ -8,8 +8,8 @@ public class SavingsAccount extends Account {
 	private Date createDate;
 	private String status;
 
-	public SavingsAccount(double balance, Date createDate, String status) {
-		super();
+	public SavingsAccount(String accountNo, String accountType,double balance, Date createDate, String status) {
+		super(accountNo,accountType);
 		this.balance = balance;
 		this.createDate = createDate;
 		this.status = status;
